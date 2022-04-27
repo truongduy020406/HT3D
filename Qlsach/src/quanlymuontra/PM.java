@@ -1,31 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package quanlymuontra;
-
-/**
- *
- * @author nguye
- */
 public class PM {
     private String maPM = "";
     private String ngayMuon = "";
     private int soNgayMuon = 0;
     private String maTaiKhoan = "";
     private String trangThai = "Chưa trả";
-
-    public PM() {
+    public PM(){
+        
     }
-    
     public PM(String maPM, String ngayMuon, int soNgayMuon, String maTaiKhoan) {
         this.maPM = maPM;
         this.ngayMuon = ngayMuon;
         this.soNgayMuon = soNgayMuon;
         this.maTaiKhoan = maTaiKhoan;
     }
-
     public String getMaPM() {
         return maPM;
     }

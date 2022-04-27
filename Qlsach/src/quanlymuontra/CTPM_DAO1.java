@@ -13,19 +13,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *
- * @author nguye
- */
 public class CTPM_DAO1 {
     public List<CTPM> getDSCHiTietPM(String maPhieuMuon) {
         List<CTPM> ctpmList = new ArrayList<CTPM>();
         
-        Connection connection = KetNoiSQL.getConnection();
-        
-        String sql = "select * from ChiTietPhieuMuon where maPhieuMuon like '%" + maPhieuMuon + "%'";
-        
+        Connection connection = KetNoiSQL.getConnection();       
+        String sql = "select * from ChiTietPhieuMuon where maPhieuMuon like '%" + maPhieuMuon + "%'";   
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(sql);
@@ -44,7 +37,6 @@ public class CTPM_DAO1 {
 
         return ctpmList;
     }
-    
     public void insertChiTietPM(CTPM ctpm) {
         Connection connection = KetNoiSQL.getConnection();
         String sql = "INSERT INTO ChiTietPhieuMuon (maPhieuMuon, maSach) VALUES (?, ?)";
@@ -57,7 +49,6 @@ public class CTPM_DAO1 {
             e.printStackTrace();
         }
     }
-    
     public void updateChiTietPM(CTPM ctpm) {
         Connection connection = KetNoiSQL.getConnection();
         String sql = "UPDATE ChiTietPhieuMuon SET ngayThucTra = ?, tinhTrangSach = ? WHERE maPhieuMuon = ? and maSach = ?";
@@ -68,11 +59,9 @@ public class CTPM_DAO1 {
             preparedStatement.setString(3, ctpm.getMaPM());
             preparedStatement.setString(4, ctpm.getMaSach());
             preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            
+        } catch (SQLException e) {       
         }
     }
-    
     public void deleteChiTietPM(String idPhieuMuon, String idSach) {
         Connection connection = KetNoiSQL.getConnection();
         String sql = "DELETE ChiTietPhieuMuon WHERE maSach LIKE '%" + idSach + "%' AND maPhieuMuon LIKE '%" + idPhieuMuon + "%'";
@@ -80,7 +69,6 @@ public class CTPM_DAO1 {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(sql);
         }catch(Exception e){
-            System.out.println("khong xoa dc");
         }
     }
 }

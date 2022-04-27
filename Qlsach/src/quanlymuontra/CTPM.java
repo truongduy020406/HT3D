@@ -1,24 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package quanlymuontra;
-
-/**
- *
- * @author nguye
- */
 public class CTPM {
     private String maPM = "";
     private String maSach = "";
     private String ngayThucTra = "";
     private String tinhTrangSach = "";
-    
-    public CTPM() {
-        
+    public CTPM(){
     }
-    
     public CTPM(String maPM, String maSach) {
         this.maPM = maPM;
         this.maSach = maSach;

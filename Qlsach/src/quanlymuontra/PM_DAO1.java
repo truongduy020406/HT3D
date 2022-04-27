@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package quanlymuontra;
-
 import quanlymuontra.PM;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,14 +7,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-
 public class PM_DAO1{
     public List<PM> getAllDSPhieuMuon() {
-        List<PM> pmList = new ArrayList<PM>();
-        
-        Connection connection = KetNoiSQL.getConnection();
-        
+        List<PM> pmList = new ArrayList<PM>();       
+        Connection connection = KetNoiSQL.getConnection();      
         String sql = "select maPhieuMuon, TaiKhoan.tenNguoiDung,soNgayMuon,trangThai from PhieuMuon, TaiKhoan where PhieuMuon.maTaiKhoan = TaiKhoan.maTaiKhoan";
         
         try {
@@ -28,12 +18,10 @@ public class PM_DAO1{
             ResultSet rs = statement.executeQuery(sql);
             while (rs.next()) {
                 PM pm = new PM();
-
                 pm.setMaPM(rs.getString("maPhieuMuon"));
                 pm.setMaTaiKhoan(rs.getString("tenNguoiDung"));
                 pm.setSoNgayMuon(rs.getInt("soNgayMuon"));
-                pm.setTrangThai(rs.getString("trangThai"));
-                
+                pm.setTrangThai(rs.getString("trangThai"));             
                 pmList.add(pm);
             }
         } catch (SQLException e) {
@@ -42,12 +30,9 @@ public class PM_DAO1{
         return pmList;
     }
     public List<PM> getDSPhieuMuon() {
-        List<PM> pmList = new ArrayList<PM>();
-        
+        List<PM> pmList = new ArrayList<PM>();      
         Connection connection = KetNoiSQL.getConnection();
-        
-        String sql = "select maPhieuMuon, TaiKhoan.tenNguoiDung,soNgayMuon,trangThai from PhieuMuon, TaiKhoan where  PhieuMuon.maTaiKhoan = TaiKhoan.maTaiKhoan";
-        
+        String sql = "select maPhieuMuon, TaiKhoan.tenNguoiDung,soNgayMuon,trangThai from PhieuMuon, TaiKhoan where  PhieuMuon.maTaiKhoan = TaiKhoan.maTaiKhoan";       
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(sql);
@@ -61,10 +46,8 @@ public class PM_DAO1{
             }
         } catch (SQLException e) {
         }
-
         return pmList;
-    }
-    
+    } 
     public void addPhieuMuon(PM phieuMuon) {
         Connection connection = KetNoiSQL.getConnection();
             String sql = "INSERT INTO PhieuMuon VALUES (?, ?, ?, ?, ?, ?, ?)";
@@ -78,11 +61,8 @@ public class PM_DAO1{
                 preparedStatement.executeUpdate();
             } catch (SQLException e) {
                 e.printStackTrace();
-            }
-     
-    }
-
-    
+            }   
+    }   
     public void updatePhieuMuon(PM phieuMuon) {
         Connection connection = KetNoiSQL.getConnection();
         String sql = "UPDATE PhieuMuon SET trangThai = ?, ngayMuon = ? WHERE maPhieuMuon = ?";
@@ -95,8 +75,7 @@ public class PM_DAO1{
         } catch (SQLException e) {
             System.out.println("loi");
         }
-    }
-    
+    } 
     public String getMaPMInserted() {
         Connection con = KetNoiSQL.getConnection();
         String sql = "select top 1 maPhieuMuon from PhieuMuon order by maPhieuMuon desc";
