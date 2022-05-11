@@ -80,10 +80,10 @@ public class docgia_Dao {
             statement = connection.prepareCall(sql);
             
             
-            statement.setString(1, dg.getTendocgia_22());
-            statement.setString(2, dg.getSdt_22());
-            statement.setString(3, dg.getEmail_22());
-            statement.setString(4, dg.getDiachi_22());
+            statement.setString(1, dg.getTendocgia());
+            statement.setString(2, dg.getSdt());
+            statement.setString(3, dg.getEmail());
+            statement.setString(4, dg.getDiachi());
 
             
             
