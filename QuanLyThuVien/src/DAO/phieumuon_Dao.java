@@ -79,9 +79,9 @@ public class phieumuon_Dao {
             statement = connection.prepareCall(sql);
             
             
-            statement.setString(1, pm.getMadocgiamuon());
-            statement.setString(2, pm.getMasachmuon());
-            statement.setString(3, pm.getNgaymuon());
+            statement.setString(1, pm.getMadocgiamuon_15());
+            statement.setString(2, pm.getMasachmuon_15());
+            statement.setString(3, pm.getNgaymuon_15());
 
 
             
