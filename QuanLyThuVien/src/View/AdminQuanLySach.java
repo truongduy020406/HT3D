@@ -60,8 +60,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
         tableModelDG.setRowCount(0);
         
         docgiaList.forEach((docgia) -> {
-            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia(), 
-                docgia.getSdt(), docgia.getEmail(),docgia.getDiachi()});
+            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia_22(), 
+                docgia.getSdt_22(), docgia.getEmail_22(),docgia.getDiachi_22()});
         });
     }
            private void showPhieumuon() {
@@ -779,13 +779,13 @@ public class AdminQuanLySach extends javax.swing.JFrame {
     }//GEN-LAST:event_butXoaActionPerformed
 
     private void butThemDGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butThemDGActionPerformed
-        String tendocgia = txtTendocgia.getText();
-        String sdt = txtSdt.getText();
-        String email = txtEmail.getText();
-        String diachi = txtDiachi.getText();
+        String tendocgia_22 = txtTendocgia.getText();
+        String sdt_22 = txtSdt.getText();
+        String email_22 = txtEmail.getText();
+        String diachi_22 = txtDiachi.getText();
 
         
-        docgia dg = new docgia(tendocgia, sdt,email,diachi);
+        docgia dg = new docgia(tendocgia_22, sdt_22,email_22,diachi_22);
         
         docgia_Dao.insert(dg);
      showDocgia();
@@ -800,7 +800,7 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             System.out.println("option : " + option);
             
             if(option == 0) {
-                docgia_Dao.delete(dg.getMadocgia());
+                docgia_Dao.delete(dg.getMadocgia_22());
                 
                 showDocgia();
             }
@@ -815,8 +815,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             tableModelDG.setRowCount(0);
         
        docgiaList.forEach((docgia) -> {
-            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia(), 
-                docgia.getSdt(), docgia.getEmail(),docgia.getDiachi()});
+            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia_22(), 
+                docgia.getSdt_22(), docgia.getEmail_22(),docgia.getDiachi_22()});
         });
         }else {
             showDocgia();
