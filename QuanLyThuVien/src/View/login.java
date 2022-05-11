@@ -28,58 +28,57 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_36 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtusername3 = new javax.swing.JTextField();
-        txtpassword3 = new javax.swing.JPasswordField();
-        butlogin3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        butcancer = new javax.swing.JButton();
+        jLabel8_36 = new javax.swing.JLabel();
+        jLabel9_36 = new javax.swing.JLabel();
+        txtusername_36 = new javax.swing.JTextField();
+        txtpassword_36 = new javax.swing.JPasswordField();
+        butlogin_36 = new javax.swing.JButton();
+        jButton_36 = new javax.swing.JButton();
+        butcancer_36 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setText("Đăng nhập sách");
+        jLabel_36.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel_36.setText("Đăng nhập sách");
 
         jPanel4.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel8.setText("Username : ");
+        jLabel8_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8_36.setText("Username : ");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setText("Password : ");
+        jLabel9_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel9_36.setText("Password : ");
 
-        txtusername3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtusername_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-        txtpassword3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtpassword_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-        butlogin3.setBackground(new java.awt.Color(255, 255, 153));
-        butlogin3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        butlogin3.setText("Login");
-        butlogin3.addActionListener(new java.awt.event.ActionListener() {
+        butlogin_36.setBackground(new java.awt.Color(255, 255, 153));
+        butlogin_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        butlogin_36.setText("Login");
+        butlogin_36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butlogin3ActionPerformed(evt);
+                butlogin_36ActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 153));
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("Reset");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButton_36.setBackground(new java.awt.Color(255, 255, 153));
+        jButton_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_36.setText("Reset");
+        jButton_36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButton_36ActionPerformed(evt);
             }
         });
 
-        butcancer.setBackground(new java.awt.Color(255, 255, 153));
-        butcancer.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        butcancer.setText("Cancel");
-        butcancer.addActionListener(new java.awt.event.ActionListener() {
+        butcancer_36.setBackground(new java.awt.Color(255, 255, 153));
+        butcancer_36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        butcancer_36.setText("Cancel");
+        butcancer_36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butcancerActionPerformed(evt);
+                butcancer_36ActionPerformed(evt);
             }
         });
 
@@ -90,20 +89,20 @@ public class login extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8))
+                    .addComponent(jLabel9_36)
+                    .addComponent(jLabel8_36))
                 .addGap(69, 69, 69)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtusername3, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                    .addComponent(txtpassword3))
+                    .addComponent(txtusername_36, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(txtpassword_36))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(110, 110, 110)
-                .addComponent(butlogin3)
+                .addComponent(butlogin_36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_36, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(butcancer)
+                .addComponent(butcancer_36)
                 .addGap(0, 69, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -111,17 +110,17 @@ public class login extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(66, 66, 66)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtusername3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
+                    .addComponent(txtusername_36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8_36))
                 .addGap(31, 31, 31)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(txtpassword3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel9_36)
+                    .addComponent(txtpassword_36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(58, 58, 58)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(butlogin3)
-                    .addComponent(jButton2)
-                    .addComponent(butcancer))
+                    .addComponent(butlogin_36)
+                    .addComponent(jButton_36)
+                    .addComponent(butcancer_36))
                 .addContainerGap(99, Short.MAX_VALUE))
         );
 
@@ -133,28 +132,28 @@ public class login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jLabel1))
+                        .addComponent(jLabel_36))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
+                        .addGap(21, 21, 21)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel_36)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void butlogin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butlogin3ActionPerformed
+    private void butlogin_36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butlogin_36ActionPerformed
         // TODO add your handling code here:
-        String username=txtusername3.getText();
-        String password=txtpassword3.getText();
+        String username=txtusername_36.getText();
+        String password=txtpassword_36.getText();
         StringBuilder sb= new StringBuilder();
         if(username.equals("")){
             sb.append("Username bỏ trống \n");
@@ -168,26 +167,26 @@ public class login extends javax.swing.JFrame {
         }
         if(username.equals("abc")&& password.equals("12345")){
 
-            txtusername3.setText(null);
-            txtpassword3.setText(null);
+            txtusername_36.setText(null);
+            txtpassword_36.setText(null);
             AdminQuanLySach Info=new AdminQuanLySach();
             Info.setVisible(true);
         }
         else{
             JOptionPane.showMessageDialog(this, "Username hoặc Password bị sai","Failure",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_butlogin3ActionPerformed
+    }//GEN-LAST:event_butlogin_36ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton_36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_36ActionPerformed
         // TODO add your handling code here:
         txtusername.setText("");
         txtpassword.setText("");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton_36ActionPerformed
 
-    private void butcancerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butcancerActionPerformed
+    private void butcancer_36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butcancer_36ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_butcancerActionPerformed
+    }//GEN-LAST:event_butcancer_36ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,32 +224,34 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton butcancer;
-    private javax.swing.JButton butlogin;
-    private javax.swing.JButton butlogin1;
-    private javax.swing.JButton butlogin2;
-    private javax.swing.JButton butlogin3;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton butcancer_36;
+    private javax.swing.JButton butlogin_36;
+    private javax.swing.JButton jButton_36;
+    private javax.swing.JLabel jLabel8_36;
+    private javax.swing.JLabel jLabel9_36;
+    private javax.swing.JLabel jLabel_36;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPasswordField txtpassword;
-    private javax.swing.JPasswordField txtpassword1;
-    private javax.swing.JPasswordField txtpassword2;
-    private javax.swing.JPasswordField txtpassword3;
-    private javax.swing.JTextField txtusername;
-    private javax.swing.JTextField txtusername1;
-    private javax.swing.JTextField txtusername2;
-    private javax.swing.JTextField txtusername3;
+    private javax.swing.JPasswordField txtpassword_36;
+    private javax.swing.JTextField txtusername_36;
     // End of variables declaration//GEN-END:variables
+
+    private static class txtusername {
+
+        private static void setText(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public txtusername() {
+        }
+    }
+
+    private static class txtpassword {
+
+        private static void setText(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public txtpassword() {
+        }
+    }
 }

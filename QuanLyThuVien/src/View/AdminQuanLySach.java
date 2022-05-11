@@ -70,8 +70,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
         tableModelPM.setRowCount(0);
         
         phieumuonList.forEach((phieumuon) -> {
-            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon_15(), 
-              phieumuon.getMasachmuon_15(), phieumuon.getNgaymuon_15()});
+            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon(), 
+              phieumuon.getMasachmuon(), phieumuon.getNgaymuon()});
         });
     }
 
@@ -862,7 +862,7 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             System.out.println("option : " + option);
             
             if(option == 0) {
-                phieumuon_Dao.delete(pm.getMaphieumuon_15());
+                phieumuon_Dao.delete(pm.getMaphieumuon());
                 
                 showPhieumuon();
             }
@@ -877,8 +877,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             tableModelPM.setRowCount(0);
         
        phieumuonList.forEach((phieumuon) -> {
-            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon_15(), 
-                phieumuon.getMasachmuon_15(), phieumuon.getNgaymuon_15()});
+            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon(), 
+                phieumuon.getMasachmuon(), phieumuon.getNgaymuon()});
         });
         }else {
             showPhieumuon();
