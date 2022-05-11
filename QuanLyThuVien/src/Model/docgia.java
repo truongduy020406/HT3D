@@ -9,63 +9,63 @@ package Model;
  * @author admin
  */
 public class docgia {
-    private int madocgia_22;
-    private String tendocgia_22,sdt_22,email_22,diachi_22;
+    private int madocgia;
+    private String tendocgia,sdt,email,diachi;
     public docgia(){}
 
-    public docgia(int madocgia_22, String tendocgia_22, String sdt_22, String email_22, String diachi_22) {
-        this.madocgia_22 = madocgia_22;
-        this.tendocgia_22 = tendocgia_22;
-        this.sdt_22 = sdt_22;
-        this.email_22 = email_22;
-        this.diachi_22 = diachi_22;
+    public docgia(int madocgia, String tendocgia, String sdt, String email, String diachi) {
+        this.madocgia = madocgia;
+        this.tendocgia = tendocgia;
+        this.sdt = sdt;
+        this.email = email;
+        this.diachi = diachi;
     }
 
-    public docgia(String tendocgia_22, String sdt_22, String email_22, String diachi_22) {
-        this.tendocgia_22 = tendocgia_22;
-        this.sdt_22 = sdt_22;
-        this.email_22 = email_22;
-        this.diachi_22 = diachi_22;
+    public docgia(String tendocgia, String sdt, String email, String diachi) {
+        this.tendocgia = tendocgia;
+        this.sdt = sdt;
+        this.email = email;
+        this.diachi = diachi;
     }
 
-    public int getMadocgia_22() {
-        return madocgia_22;
+    public int getMadocgia() {
+        return madocgia;
     }
 
-    public void setMadocgia_22(int madocgia_22) {
-        this.madocgia_22 = madocgia_22;
+    public void setMadocgia(int madocgia) {
+        this.madocgia = madocgia;
     }
 
-    public String getTendocgia_22() {
-        return tendocgia_22;
+    public String getTendocgia() {
+        return tendocgia;
     }
 
-    public void setTendocgia_22(String tendocgia_22) {
-        this.tendocgia_22 = tendocgia_22;
+    public void setTendocgia(String tendocgia) {
+        this.tendocgia = tendocgia;
     }
 
-    public String getSdt_22() {
-        return sdt_22;
+    public String getSdt() {
+        return sdt;
     }
 
-    public void setSdt_22(String sdt_22) {
-        this.sdt_22 = sdt_22;
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
     }
 
-    public String getEmail_22() {
-        return email_22;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmail_22(String email_22) {
-        this.email_22 = email_22;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getDiachi_22() {
-        return diachi_22;
+    public String getDiachi() {
+        return diachi;
     }
 
-    public void setDiachi_22(String diachi_22) {
-        this.diachi_22 = diachi_22;
+    public void setDiachi(String diachi) {
+        this.diachi = diachi;
     }
 
     

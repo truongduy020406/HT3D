@@ -9,52 +9,52 @@ package Model;
  * @author admin
  */
 public class phieumuon {
-    private int maphieumuon;
-    private String madocgiamuon,masachmuon,ngaymuon;
+    private int maphieumuon_15;
+    private String madocgiamuon_15,masachmuon_15,ngaymuon_15;
     public phieumuon(){}    
 
-    public int getMaphieumuon() {
-        return maphieumuon;
+    public int getMaphieumuon_15() {
+        return maphieumuon_15;
     }
 
-    public void setMaphieumuon(int maphieumuon) {
-        this.maphieumuon = maphieumuon;
+    public void setMaphieumuon_15(int maphieumuon_15) {
+        this.maphieumuon_15 = maphieumuon_15;
     }
 
-    public String getMadocgiamuon() {
-        return madocgiamuon;
+    public String getMadocgiamuon_15() {
+        return madocgiamuon_15;
     }
 
-    public void setMadocgiamuon(String madocgiamuon) {
-        this.madocgiamuon = madocgiamuon;
+    public void setMadocgiamuon_15(String madocgiamuon_15) {
+        this.madocgiamuon_15 = madocgiamuon_15;
     }
 
-    public String getMasachmuon() {
-        return masachmuon;
+    public String getMasachmuon_15() {
+        return masachmuon_15;
     }
 
-    public void setMasachmuon(String masachmuon) {
-        this.masachmuon = masachmuon;
+    public void setMasachmuon_15(String masachmuon_15) {
+        this.masachmuon_15 = masachmuon_15;
     }
 
-    public String getNgaymuon() {
-        return ngaymuon;
+    public String getNgaymuon_15() {
+        return ngaymuon_15;
     }
 
-    public void setNgaymuon(String ngaymuon) {
-        this.ngaymuon = ngaymuon;
+    public void setNgaymuon_15(String ngaymuon_15) {
+        this.ngaymuon_15 = ngaymuon_15;
     }
-
-    public phieumuon(String madocgiamuon, String masachmuon, String ngaymuon) {
-        this.madocgiamuon = madocgiamuon;
-        this.masachmuon = masachmuon;
-        this.ngaymuon = ngaymuon;
+     public phieumuon(String madocgiamuon_15, String masachmuon_15, String ngaymuon_15) {
+         this.madocgiamuon_15 = madocgiamuon_15;
+        this.masachmuon_15 = masachmuon_15;
+        this.ngaymuon_15 = ngaymuon_15;
     }
-
-    public phieumuon(int maphieumuon, String madocgiamuon, String masachmuon, String ngaymuon) {
-        this.maphieumuon = maphieumuon;
-        this.madocgiamuon = madocgiamuon;
-        this.masachmuon = masachmuon;
-        this.ngaymuon = ngaymuon;
+    
+    public phieumuon(int maphieumuon_15,String madocgiamuon_15, String masachmuon_15, String ngaymuon_15) {
+        this.maphieumuon_15 = maphieumuon_15;
+         this.madocgiamuon_15 = madocgiamuon_15;
+        this.masachmuon_15 = masachmuon_15;
+        this.ngaymuon_15 = ngaymuon_15;
     }
 }
+

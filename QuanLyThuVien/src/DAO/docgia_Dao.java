@@ -80,10 +80,10 @@ public class docgia_Dao {
             statement = connection.prepareCall(sql);
             
             
-            statement.setString(1, dg.getTendocgia_22());
-            statement.setString(2, dg.getSdt_22());
-            statement.setString(3, dg.getEmail_22());
-            statement.setString(4, dg.getDiachi_22());
+            statement.setString(1, dg.getTendocgia());
+            statement.setString(2, dg.getSdt());
+            statement.setString(3, dg.getEmail());
+            statement.setString(4, dg.getDiachi());
 
             
             
@@ -109,7 +109,7 @@ public class docgia_Dao {
         }
         //ket thuc.
     }
-            public static void delete(int madocgia_22) {
+            public static void delete(int madocgia) {
         Connection connection = null;
         PreparedStatement statement = null;
         
@@ -121,7 +121,7 @@ public class docgia_Dao {
             String sql = "delete from docgia where madocgia = ?";
             statement = connection.prepareCall(sql);
             
-            statement.setInt(1, madocgia_22);
+            statement.setInt(1, madocgia);
             
             statement.execute();
         } catch (SQLException ex) {

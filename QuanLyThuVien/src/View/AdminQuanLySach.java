@@ -60,8 +60,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
         tableModelDG.setRowCount(0);
         
         docgiaList.forEach((docgia) -> {
-            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia_22(), 
-                docgia.getSdt_22(), docgia.getEmail_22(),docgia.getDiachi_22()});
+            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia(), 
+                docgia.getSdt(), docgia.getEmail(),docgia.getDiachi()});
         });
     }
            private void showPhieumuon() {
@@ -70,8 +70,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
         tableModelPM.setRowCount(0);
         
         phieumuonList.forEach((phieumuon) -> {
-            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon(), 
-              phieumuon.getMasachmuon(), phieumuon.getNgaymuon()});
+            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon_15(), 
+              phieumuon.getMasachmuon_15(), phieumuon.getNgaymuon_15()});
         });
     }
 
@@ -779,13 +779,13 @@ public class AdminQuanLySach extends javax.swing.JFrame {
     }//GEN-LAST:event_butXoaActionPerformed
 
     private void butThemDGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butThemDGActionPerformed
-        String tendocgia_22 = txtTendocgia.getText();
-        String sdt_22 = txtSdt.getText();
-        String email_22 = txtEmail.getText();
-        String diachi_22 = txtDiachi.getText();
+        String tendocgia = txtTendocgia.getText();
+        String sdt = txtSdt.getText();
+        String email = txtEmail.getText();
+        String diachi = txtDiachi.getText();
 
         
-        docgia dg = new docgia(tendocgia_22, sdt_22,email_22,diachi_22);
+        docgia dg = new docgia(tendocgia, sdt,email,diachi);
         
         docgia_Dao.insert(dg);
      showDocgia();
@@ -800,7 +800,7 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             System.out.println("option : " + option);
             
             if(option == 0) {
-                docgia_Dao.delete(dg.getMadocgia_22());
+                docgia_Dao.delete(dg.getMadocgia());
                 
                 showDocgia();
             }
@@ -815,8 +815,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             tableModelDG.setRowCount(0);
         
        docgiaList.forEach((docgia) -> {
-            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia_22(), 
-                docgia.getSdt_22(), docgia.getEmail_22(),docgia.getDiachi_22()});
+            tableModelDG.addRow(new Object[] {tableModelDG.getRowCount() + 1, docgia.getTendocgia(), 
+                docgia.getSdt(), docgia.getEmail(),docgia.getDiachi()});
         });
         }else {
             showDocgia();
@@ -862,7 +862,7 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             System.out.println("option : " + option);
             
             if(option == 0) {
-                phieumuon_Dao.delete(pm.getMaphieumuon());
+                phieumuon_Dao.delete(pm.getMaphieumuon_15());
                 
                 showPhieumuon();
             }
@@ -877,8 +877,8 @@ public class AdminQuanLySach extends javax.swing.JFrame {
             tableModelPM.setRowCount(0);
         
        phieumuonList.forEach((phieumuon) -> {
-            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon(), 
-                phieumuon.getMasachmuon(), phieumuon.getNgaymuon()});
+            tableModelPM.addRow(new Object[] {tableModelPM.getRowCount() + 1, phieumuon.getMadocgiamuon_15(), 
+                phieumuon.getMasachmuon_15(), phieumuon.getNgaymuon_15()});
         });
         }else {
             showPhieumuon();
